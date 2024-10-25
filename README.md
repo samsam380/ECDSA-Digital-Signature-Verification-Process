@@ -13,7 +13,7 @@ Signature Verification: To verify the signature without knowing the private key,
         By calculating u and v (which involve the inverse of s and the hashed message), we reconstruct the elliptic curve point used in the signature process.
         The x coordinate of this resulting_point should match r if the signature is valid.
 
-Match of x and r: Since x from resulting_point matches r (as you observed), it confirms that:
+Match of x and r: Since x from resulting_point matches r, it confirms that:
         The signature was created with the corresponding private key.
         The message wasn’t altered after signing.
 
